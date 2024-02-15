@@ -7,7 +7,7 @@ Advisor: Dr. Thomas Bocek [thomas.bocek@ost.ch](mailto:thomas.bocek@ost.ch)
 
 ## Project Dashboard
 The latest version of the documentation as well as some usefull links are published on the project dashboard:
-todo: link
+https://laurinzubler.github.io/ba-documentation/
 
 ## Typst
 This documentation is written using Typst. A markup based typsetting system similar to LaTeX.

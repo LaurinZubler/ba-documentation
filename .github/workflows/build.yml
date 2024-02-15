@@ -1,0 +1,56 @@
+name: Build and Publish
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3      
+      - uses: lvignoli/typst-action@main
+        with:
+          source_file: |
+            main.typ
+            chapters/appendix/meetings/meeting01.typ
+            chapters/appendix/meetings/meeting02.typ
+            chapters/appendix/meetings/meeting03.typ
+            chapters/appendix/meetings/meeting04.typ
+            chapters/appendix/meetings/meeting05.typ
+            chapters/appendix/meetings/meeting06.typ
+            chapters/appendix/meetings/meeting07.typ
+            chapters/appendix/meetings/meeting08.typ
+            chapters/appendix/meetings/meeting09.typ
+            chapters/appendix/meetings/meeting10.typ
+            chapters/appendix/meetings/meeting11.typ
+            chapters/appendix/meetings/meeting12.typ
+            chapters/appendix/meetings/meeting13.typ
+            chapters/appendix/meetings/meeting14.typ
+            chapters/appendix/meetings/meeting15.typ
+            chapters/appendix/meetings/meeting16.typ
+            chapters/appendix/meetings/meeting17.typ
+      - run: mkdir out
+      - run: mv index.html out/
+      - run: mv main.pdf out/upsi_doc.pdf
+      - run: mv chapters/appendix/meetings/meeting*.pdf out/
+      - uses: actions/upload-pages-artifact@v1
+        with: { path: 'out' }
+
+  Deploy:
+    name: Deploy
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    needs: Build
+    concurrency:
+      group: "pages"
+      cancel-in-progress: false
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2

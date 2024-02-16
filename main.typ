@@ -3,7 +3,7 @@
 
 #include "/utils/metadata.typ"
 
-//title page
+#include "/chapters/title-page.typ"
 
 #show: doc => template(doc)
 

@@ -1,5 +1,5 @@
 #let title = "upsi"
-#let subtitle = "A Decentralized STI Tracing Approach"
+#let subtitle = "a decentralized STI tracing approach"
 #let thesis = "Bachelor Thesis"
 #let semester = "Spring 2024"
 #let author = "Laurin Zubler"

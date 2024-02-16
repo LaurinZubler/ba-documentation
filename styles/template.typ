@@ -5,7 +5,7 @@
 
 #let template(doc) = {
 
-  // Text size and font 
+  // Text size and font
   set text(
     fontSize,
     font: font,
@@ -63,7 +63,7 @@
       on: "header",
       gutter: 2em,
       lineWidthHeaderFooter,
-    ),  
+    ),
     chic-separator(
       on: "footer",
       gutter: 1.5em,

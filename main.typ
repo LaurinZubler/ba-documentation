@@ -1,4 +1,5 @@
 #import "/styles/template.typ": template
+#import "/styles/numbering.typ": numbering
 
 #include "/utils/metadata.typ"
 
@@ -13,9 +14,7 @@
 = ohni nummer
 blubedidub
 
-
-#set heading(numbering: "1.1")
-#show bibliography: set heading(numbering: "1.1")
+#show: doc => numbering(doc)
 
 = mit nummer
 asdf

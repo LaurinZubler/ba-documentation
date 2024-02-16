@@ -1,12 +1,12 @@
-# upsi documentaion
+# upsi - documentaion
 This repository contains the documentation for the bachelor thesis "upsi - A decentralized STI tracing approach"
 
-OST - Eastern Switzerland University of Applied Sciences
-Author: Laurin Zubler [laurin.zubler@ost.ch](mailto:laurin.zubler@ost.ch)
-Advisor: Dr. Thomas Bocek [thomas.bocek@ost.ch](mailto:thomas.bocek@ost.ch)
+OST - Eastern Switzerland University of Applied Sciences  
+Author: Laurin Zubler [laurin.zubler@ost.ch](mailto:laurin.zubler@ost.ch)  
+Advisor: Dr. Thomas Bocek [thomas.bocek@ost.ch](mailto:thomas.bocek@ost.ch)    
 
 ## Project Dashboard
-The latest version of the documentation as well as some usefull links are published on the project dashboard:
+The latest version of the documentation as well as some usefull links are published on the project dashboard:  
 https://laurinzubler.github.io/ba-documentation/
 
 ## Typst

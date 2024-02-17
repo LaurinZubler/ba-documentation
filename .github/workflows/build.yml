@@ -35,8 +35,13 @@ jobs:
       - run: mkdir out
       - run: mv index.html out/
       - run: mv utils/build-time.js out/
-      - run: mv main.pdf out/upsi_doc.pdf
+      - run: mv main.pdf out/upsi_doc_full.pdf
       - run: mv chapters/appendix/meetings/meeting*.pdf out/
+      - run: echo "#let documentVersion = 'public'" > utils/document-version.typ
+      - uses: lvignoli/typst-action@main
+        with:
+          source_file: main.typ
+      - run: mv main.pdf out/upsi_doc_public.pdf
       - uses: actions/upload-pages-artifact@v1
         with: { path: 'out' }
 

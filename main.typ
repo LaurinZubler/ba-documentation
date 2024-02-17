@@ -8,6 +8,11 @@
 
 #show: doc => template(doc)
 
+#outline(
+  title: [Todo's],
+  target: figure.where(kind: "todo"),
+)
+
 // Abstract
 // Acknowledgments
 // Table of Contents
@@ -17,6 +22,8 @@
 === header 3
 ==== header 4
 blubedidub
+#todo("dkdk")
+
 
 #show: doc => numbering(doc)
 

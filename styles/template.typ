@@ -22,6 +22,8 @@
   // figure caption style
   show figure.caption: emph
   
+  show figure.caption.where(kind: "todo"): emph //undo emph for todos
+
   // heading 1
   show heading.where(level: 1): it => {
     pagebreak()

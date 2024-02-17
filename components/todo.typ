@@ -5,6 +5,11 @@
     fill: rgb("#ffdc00"),
     inset: gap,
     radius: 4pt,
-    [*Todo:* #text],
+    figure(
+      [],
+      caption: text,
+      kind: "todo",
+      supplement: "Todo"
+    )
   )
 }

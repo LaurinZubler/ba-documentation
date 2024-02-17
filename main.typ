@@ -13,37 +13,28 @@
   target: figure.where(kind: "todo"),
 )
 
-// Abstract
-// Acknowledgments
+#todo("example todo")
 
-#outline(
-    title: "Table of Contents",
-    depth: 3,
-    indent: auto,
-)
+#include "/chapters/abstract.typ"
+#include "/chapters/acknowledgements.typ"
+#include "/chapters/contents.typ"
 
-= ohni nummer
-== header 2
-=== header 3
-==== header 4
-blubedidub
-#todo("dkdk")
-
-
+// show headers with numbering
 #show: doc => numbering(doc)
 
-= mit nummer
-== header 2
-=== header 3
-==== header 4
-asdf
+#let chapters = (
+  "chapters/introduction.typ",
+  "chapters/literature-review.typ",
+  "chapters/development.typ",
+  "chapters/user-research.typ",
+  "chapters/conclusion.typ",
+  "chapters/project-management.typ",
+  "chapters/glossary.typ",
+  "chapters/bibliography.typ",
+  "chapters/lists.typ",
+  "chapters/appendix.typ",
+)
 
-#todo("sup")
-
-
-
-
-
-
-
-
+#for path in chapters {
+  include path
+}

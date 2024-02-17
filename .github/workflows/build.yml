@@ -9,7 +9,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3      
+      - uses: actions/checkout@v3
+      - run: echo "export const buildTime = '$(TZ="Europe/Berlin" date +"%Y-%m-%d %H:%M:%S")'" > utils/build-time.js
       - uses: lvignoli/typst-action@main
         with:
           source_file: |
@@ -33,6 +34,7 @@ jobs:
             chapters/appendix/meetings/meeting17.typ
       - run: mkdir out
       - run: mv index.html out/
+      - run: mv /utils/build-time.js out/
       - run: mv main.pdf out/upsi_doc.pdf
       - run: mv chapters/appendix/meetings/meeting*.pdf out/
       - uses: actions/upload-pages-artifact@v1

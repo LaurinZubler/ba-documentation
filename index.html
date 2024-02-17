@@ -9,7 +9,10 @@
 </head>
     <body class="bg-pink-100 p-8">
     <div class="container mx-auto">
-    <h1 class="text-4xl font-bold mb-8">upsi - dashboard</h1>
+      <div class="flex justify-between items-center mb-8">
+        <h1 class="text-4xl font-bold">upsi - dashboard</h1>
+          <span class="text-xs" id="buildTime"></span>
+      </div>
     <div class="flex flex-wrap -mx-4">
         <div class="w-full lg:w-2/3 px-4 mb-4 lg:mb-0">
             <div class="bg-white shadow-md rounded-lg p-6 mb-6">
@@ -55,4 +58,10 @@
     </div>
 </div>
 </body>
+<script type="module">
+  import { buildTime } from '/ba-documentation/build-time.js';
+  document.getElementById('buildTime').innerText = buildTime;
+  console.log("hello")
+</script>
+
 </html>

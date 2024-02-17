@@ -76,7 +76,7 @@
     chic-height(on: "footer", 1.8cm + gapHeaderFooter),
     chic-header(
       left-side: image("/images/ost/ost_logo.jpg", height: 1.4cm),
-      center-side: text(fontSizeH2)[*#title*],
+      center-side: [#text(fontSizeH2)[*#title*] \ #text(fontSizeHeaderFooter)[#subtitle]],
       right-side: text(fontSizeHeaderFooter)[#author]
     ),
     chic-footer(

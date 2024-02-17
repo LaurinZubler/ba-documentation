@@ -15,7 +15,12 @@
 
 // Abstract
 // Acknowledgments
-// Table of Contents
+
+#outline(
+    title: "Table of Contents",
+    depth: 3,
+    indent: auto,
+)
 
 = ohni nummer
 == header 2

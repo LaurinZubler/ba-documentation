@@ -1,4 +1,5 @@
 #import "@preview/chic-hdr:0.3.0": *
+#import "@preview/outrageous:0.1.0"
 #import "/utils/strings.typ": *
 #import "/styles/variables.typ": *
 #import "/components/line.typ": *
@@ -8,7 +9,7 @@
   // Text size and font
   set text(
     fontSize,
-    font: font,
+    font: fontFamily,
   )
   
   // page layout
@@ -85,5 +86,12 @@
     )
   )
   
+  // outlines
+  // https://github.com/typst/packages/tree/main/packages/preview/outrageous/0.1.0
+  show outline.entry: outrageous.show-entry.with(
+    ..outrageous.presets.outrageous-toc,
+    font: (fontFamily, auto)
+  )
+
   doc
 }

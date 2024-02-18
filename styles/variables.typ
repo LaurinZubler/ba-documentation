@@ -1,4 +1,4 @@
-#let fontFamily = ("Arial", "DejaVu Sans Mono")
+#let fontFamily = ("Arial", "DejaVu Sans")
 
 #let gap = 7pt
 #let gapH1 = 7pt

@@ -11,7 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: echo "export const buildTime = '$(TZ="Europe/Berlin" date +"%d.%m.%Y %H:%M:%S")'" > utils/build-time.js
-      - run: sudo apt install ttf-mscorefonts-installer
       - uses: lvignoli/typst-action@main
         with:
           source_file: |

@@ -1,4 +1,4 @@
-#let fontFamily = "Arial"
+#let fontFamily = ("Arial", "Linux Libertine")
 
 #let gap = 7pt
 #let gapH1 = 7pt

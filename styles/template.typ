@@ -1,4 +1,4 @@
-#import "@preview/chic-hdr:0.3.0": *
+#import "@preview/chic-hdr:0.4.0": *
 #import "@preview/outrageous:0.1.0"
 #import "/utils/strings.typ": *
 #import "/styles/variables.typ": *
@@ -52,6 +52,11 @@
     it
     horizontalLine(lineWidthH3)
     v(gapH3)
+  }
+
+  // heading 4
+  show heading.where(level: 4): it => {
+  // hidden. use with /component/p.typ
   }
   
   // footnotes

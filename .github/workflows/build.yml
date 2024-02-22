@@ -17,12 +17,12 @@ jobs:
       - run: sudo apt-add-repository multiverse
       - run: sudo apt-get update
 
-      - run: wget https://www.freedesktop.org/software/fontconfig/webfonts/webfonts.tar.gz
-      - run: tar -xzf webfonts.tar.gz
-      - run: cabextract msfonts/*.exe
-      - run: cp  *.ttf  *.TTF /usr/local/share/fonts/
-      - run: fc-cache -f -v
-      - run: fc-match Arial
+      - run: sudo wget https://www.freedesktop.org/software/fontconfig/webfonts/webfonts.tar.gz
+      - run: sudo tar -xzf webfonts.tar.gz
+      - run: sudo cabextract msfonts/*.exe
+      - run: sudo cp  *.ttf  *.TTF /usr/local/share/fonts/
+      - run: sudo fc-cache -f -v
+      - run: sudo fc-match Arial
 
 # set build time on dashboard
       - run: echo "export const buildTime = '$(TZ="Europe/Berlin" date +"%d.%m.%Y %H:%M:%S")'" > utils/build-time.js

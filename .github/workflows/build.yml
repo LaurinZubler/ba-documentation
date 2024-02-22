@@ -11,19 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-# install fonts
-      - run: apt-get update
-      - run: apt-get install -y --no-install-recommends software-properties-common curl wget cabextract
-      - run: apt-add-repository multiverse
-      - run: apt-get update
-
-      - run: wget https://www.freedesktop.org/software/fontconfig/webfonts/webfonts.tar.gz
-      - run: tar -xzf webfonts.tar.gz
-      - run: cabextract msfonts/*.exe
-      - run: cp  *.ttf  *.TTF /usr/local/share/fonts/
-      - run: fc-cache -f -v
-      - run: fc-match Arial
-
 # set build time on dashboard
       - run: echo "export const buildTime = '$(TZ="Europe/Berlin" date +"%d.%m.%Y %H:%M:%S")'" > utils/build-time.js
 

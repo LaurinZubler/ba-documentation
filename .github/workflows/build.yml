@@ -24,7 +24,7 @@ jobs:
       - run: sudo fc-cache -f -v
       - run: sudo fc-match Arial
 
-      - run: sudo echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true" | debconf-set-selections
+      - run: echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
       - run: sudo apt-get install -y --no-install-recommends fontconfig ttf-mscorefonts-installer
       - run: sudo cp localfonts.conf /etc/fonts/local.conf
       - run: sudo fc-cache -f -v

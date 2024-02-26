@@ -25,4 +25,4 @@
   - technologien anschauen
   - mögliche kontaktpersonen test center
   - scope schicken
-])ty
+])

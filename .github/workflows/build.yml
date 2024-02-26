@@ -14,33 +14,36 @@ jobs:
 # set build time on dashboard
       - run: echo "export const buildTime = '$(TZ="Europe/Berlin" date +"%d.%m.%Y %H:%M:%S")'" > utils/build-time.js
 
+# move meetings minutes to root to use other components
+      - run: mv chapters/appendix/meetings/meeting*.typ /
+
 # build full version pdf
       - uses: lvignoli/typst-action@main
         with:
           source_file: |
             main.typ
-            chapters/appendix/meetings/meeting01.typ
-            chapters/appendix/meetings/meeting02.typ
-            chapters/appendix/meetings/meeting03.typ
-            chapters/appendix/meetings/meeting04.typ
-            chapters/appendix/meetings/meeting05.typ
-            chapters/appendix/meetings/meeting06.typ
-            chapters/appendix/meetings/meeting07.typ
-            chapters/appendix/meetings/meeting08.typ
-            chapters/appendix/meetings/meeting09.typ
-            chapters/appendix/meetings/meeting10.typ
-            chapters/appendix/meetings/meeting11.typ
-            chapters/appendix/meetings/meeting12.typ
-            chapters/appendix/meetings/meeting13.typ
-            chapters/appendix/meetings/meeting14.typ
-            chapters/appendix/meetings/meeting15.typ
-            chapters/appendix/meetings/meeting16.typ
-            chapters/appendix/meetings/meeting17.typ
+            meeting01.typ
+            meeting02.typ
+            meeting03.typ
+            meeting04.typ
+            meeting05.typ
+            meeting06.typ
+            meeting07.typ
+            meeting08.typ
+            meeting09.typ
+            meeting10.typ
+            meeting11.typ
+            meeting12.typ
+            meeting13.typ
+            meeting14.typ
+            meeting15.typ
+            meeting16.typ
+            meeting17.typ
       - run: mkdir out
       - run: mv index.html out/
       - run: mv utils/build-time.js out/
       - run: mv main.pdf out/upsi_doc_full.pdf
-      - run: mv chapters/appendix/meetings/meeting*.pdf out/
+      - run: mv meeting*.pdf out/
 
 # build public version pdf
       - run: echo '#let documentVersion = "public"' > utils/document-version.typ

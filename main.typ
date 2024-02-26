@@ -1,4 +1,4 @@
-#import "/styles/template.typ": template
+#import "/styles/layout.typ": layout
 #import "/styles/numbering.typ": numbering
 #import "/components/todo.typ": *
 
@@ -6,7 +6,7 @@
 
 #include "/chapters/title-page.typ"
 
-#show: doc => template(doc)
+#show: doc => layout(doc)
 
 #outline(
   title: [Todo's],

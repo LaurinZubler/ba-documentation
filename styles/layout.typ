@@ -4,7 +4,7 @@
 #import "/styles/variables.typ": *
 #import "/components/line.typ": *
 
-#let template(doc) = {
+#let layout(doc) = {
 
   // Text size and font
   set text(

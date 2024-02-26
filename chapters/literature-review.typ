@@ -3,24 +3,34 @@
 = Literature Review
 == STI
 ==== Introduction
-#p("")
+#p([
+  - what are STI's?
+])
 ==== Current Situation
-#p("")
-
-== Tracing
-==== Introduction
-#p("")
-
-==== Covid App
-#p("")
+#p([
+  - case numbers switzerland
+  - trend. up/down?
+  - test center situation
+])
 
 == Blockchain
 ==== Introduction
-#p("")
+#p([])
+
+== Tracing
+==== Introduction
+#p([])
+
+==== Applications
+#p([
+  - Covid App
+  - Blockchain tracing examples?
+])
+
 
 == Encryption
 ==== Introduction
-#p("")
+#p([])
 
 
 == Discussion

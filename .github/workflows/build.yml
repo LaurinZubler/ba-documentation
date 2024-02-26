@@ -15,7 +15,7 @@ jobs:
       - run: echo "export const buildTime = '$(TZ="Europe/Berlin" date +"%d.%m.%Y %H:%M:%S")'" > utils/build-time.js
 
 # move meetings minutes to root to use other components
-      - run: mv chapters/appendix/meetings/meeting*.typ /
+      - run: mv chapters/appendix/meetings/meeting*.typ ./
 
 # build full version pdf
       - uses: lvignoli/typst-action@main

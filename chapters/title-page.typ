@@ -23,12 +23,11 @@
 ]
 
 #grid(
-  columns: (0.8fr, 1fr),
+  columns: (0.9fr, 1fr),
   row-gutter: 1em,
   column-gutter: 1em,
   align(right, "Author:"), align(left, author),
   align(right, "Advisor:"), align(left, advisor),
-  align(right, "Institute:"), align(left, institute),
   align(right, "Field of Study:"), align(left, fieldOfStudy),
   align(right, "Semester:"), align(left, semester),
 )

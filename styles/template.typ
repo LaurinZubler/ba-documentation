@@ -56,7 +56,7 @@
 
   // heading 4
   show heading.where(level: 4): it => {
-  // hidden. use with /component/p.typ
+  // hidden. use with /components/p.typ
   }
   
   // footnotes

@@ -13,8 +13,6 @@
   target: figure.where(kind: "todo"),
 )
 
-#todo("example todo")
-
 #include "/chapters/abstract.typ"
 #include "/chapters/acknowledgements.typ"
 #include "/chapters/contents.typ"

@@ -20,6 +20,9 @@
   // page numbering
   set page(numbering: "1 / 1")
   
+  // bullet lists
+  set list(marker: ([•], [◦], [▪], [▫]))
+
   // figure caption style
   show figure.caption: emph
   

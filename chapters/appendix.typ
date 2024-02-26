@@ -5,6 +5,9 @@
 #include "/chapters/appendix/reflection.typ"
 == Initial Project Definition
 
+#pagebreak()
+#include "/chapters/appendix/project-management/risk-management.typ"
+
 #show: doc => onlyFullVersion(doc)
 
 #pagebreak()

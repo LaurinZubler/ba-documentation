@@ -23,10 +23,10 @@
 #let chapters = (
   "chapters/introduction.typ",
   "chapters/literature-review.typ",
-  "chapters/development.typ",
-  "chapters/user-research.typ",
+  "chapters/architecture.typ",
+  "chapters/implementation.typ",
+  "chapters/evaluation.typ",
   "chapters/conclusion.typ",
-  "chapters/project-management.typ",
   "chapters/glossary.typ",
   "chapters/bibliography.typ",
   "chapters/lists.typ",

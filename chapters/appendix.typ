@@ -7,6 +7,7 @@
 
 #show: doc => onlyFullVersion(doc)
 
+#pagebreak()
 #include "/chapters/appendix/meeting-minutes.typ"
 
 == Signed Declarations and rights

@@ -1,5 +1,8 @@
 #import "/components/p.typ": *
+#import "/components/todo.typ": *
 === Week 2
+
+#todo("fix double h4")
 
 ==== Date
 #p("26.02.2024")

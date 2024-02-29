@@ -47,7 +47,7 @@
 ==== Introduction
 #p(
   [
-    In the section, the strategies employed for managing risks in this project are explored. The risk management involved the identification, analysis, and mitigation of possible risks. The key risks that were identified, along with the analyses conducted and measures developed to manage these risks, are outlined in the following discussion.
+    In the section, the strategies employed for managing risks in this project are explored. The risk management involved the identification, analysis, and mitigation of possible risks.
   ]
 )
 
@@ -70,7 +70,7 @@
 ==== Risk Matrix
 #p(
   [
-    _@risk-matrix _ illustrates the specific values assigned to each risk probability and impact, which are used in calculating the risk score used for the classification of the risk.
+    _@risk-values _ illustrates the specific values assigned to each risk probability and impact, which are used in calculating the risk score used for the classification of the risk.
     #figure(
       block(
         width: 60%,
@@ -89,7 +89,7 @@
       ),
       caption: "Risk matrix to calculate the risk score",
       kind: table,
-    )<risk-matrix>
+    )<risk-values>
   ]
 )
 
@@ -106,10 +106,23 @@
   ]
 )
 
+==== Risks Matrix
+#p(
+  [
+  #todo[risk matrix ]
+    _@risk-matrix _
+
+    #figure(
+      image("/images/project-management/jira_risk_matrix.png", width: 80%),
+      caption: [Screenshot of inherent risk matrix in _Jira_],
+    )<risk-matrix>
+  ]
+)
+
 ==== Inherent Risks Matrix
 #p(
   [
-    The inherent risks matrix provides a visual representation of the potential risks identified, before any mitigating actions are taken. This matrix categorizes risks based on their likelihood of occurrence and the impact they could have if they materialize. It serves for prioritizing risks and planning appropriate countermeasures in the initial stages of the project.
+    The inherent risks matrix provides a visual representation of the potential risks identified, before any mitigating actions are taken. This matrix categorizes risks based on their likelihood of occurrence and the impact they could have if they materialize.
 
     _@risk-inherent-matrix _ presents a screenshot from _Jira_ of the inherent risks matrix, showcasing how each risk is categorized and assessed.
 

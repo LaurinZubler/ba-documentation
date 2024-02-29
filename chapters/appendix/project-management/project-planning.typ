@@ -5,25 +5,25 @@
 
 == Project Planning
 ==== Introduction
-#p([
+#p[
   In this section the organizing and structuring the thesis are detailed. Covered are the methodology, the tools utilized for planning and execution, and the delineation of project phases and milestones. Additionally, the implementation of Scrum and time tracking are discussed.
-])
+]
 
 === Method
 ==== Scrum+
-#p([
+#p[
   In this project Scrum+ was employed, a hybrid approach blending elements of Scrum and the Rational Unified Process (RUP). From RUP, the concept of dividing the project into distinct phases was adopted, providing a structured framework for the entire project timeline. For more immediate and flexible planning, the agile methodologies of Scrum were integrated, particularly through the use of iterative sprints. This combination allowed for both long-term structural clarity and short-term adaptability in the project management.
-])
+]
 
 === Tools
 ==== Jira
-#p([
+#p[
   As the primary tool for the project management _Jira_ by _Atlassian_ was used. It was specifically configured to align with the project's requirements, facilitating effective planning and tracking throughout the project’s duration.
   #footnote("https://www.atlassian.com/software/jira")
-])
+]
 
 ==== Jira Extensions
-#p([
+#p[
   For a better experience and additional functions in _Jira_ the following extensions were integrated:
 
   - *Time Tracking:* For more accurate time tracking, _ Timesheet Tracking for Jira_ by _TouchDown_ was used.
@@ -31,13 +31,13 @@
 
   - *Risk Management:* For risk tracking and analysis  _Hedge: Risk Management, Risk Register & Risk Matrix for Jira_ from _Appfire_ was employed.
     #footnote[https://marketplace.atlassian.com/apps/1227408/hedge-risk-management-risk-register-risk-matrix-for-jira]
-])
+]
 
 #pagebreak()
 
 === Phases
 ==== Epics
-#p([
+#p[
   The project was initial segmented into rough phases, which were implemented using _Jira_ Epics.
   Six phases were defined to structure the project's timeline and key stages.
 
@@ -78,10 +78,10 @@
     caption: [Screenshot _Jira_ timeline. Planned project phases at the beginning of the project],
   )<timeline-start>
   */
-])
+]
 
 ==== Reorganization
-#p([
+#p[
   During the project, the focus of the thesis shifted. More studies were found during the literature research than initially anticipated, leading to a greater emphasis and extension of the analysis phase.
   This shift resulted in the development of a prototype not being feasible within the project timeline. Given that the project was also a solo endeavor, the available time was limited, and developing a prototype of satisfactory was not achievable.
 
@@ -126,15 +126,15 @@
     caption: [Screenshot _Jira_ timeline. Actual carried out project phases],
   )<timeline-end>
   */
-])
+]
 
 #pagebreak()
 
 === Milestones
 ==== Introduction
-#p([
+#p[
   Milestones are significant markers that denote critical achievements and points of progress in a project's timeline. For this project, a milestone was defined at the end of each phase. Since Jira does not offer a native functionality for creating milestones, a new issue type was specifically created for this purpose. Similar to work tasks, these milestones were initially placed in the backlog and then added to sprints as the project progressed. They serve not only as goals to strive for but also as opportunities to evaluate the project's direction and success at various stages.
-])
+]
 
 #let milestone(short, title, due, criteria, end, refl) = [
   ==== #short: #title
@@ -251,12 +251,12 @@
 
 === Scrum Elements
 ==== Introduction
-#p([
+#p[
   In this section the applied scrum elements are decribed.
-])
+]
 
 ==== Sprint
-#p([
+#p[
   The work is completed in two-week sprints. Each sprint has a sprint goal and some sprint increments, small steps towards the final project product.
 
   During the ongoing sprint the tasks were managed using the _jira_ sprint board. In four swimlane the progress of the tasks is visualized.
@@ -266,49 +266,49 @@
   - *In Progress* For tasks that are currently being worked on
   - *Review* For tasks waiting for a review from the advisor
   - *Done* For tasks that are done
-])
+]
 
 ==== Backlog Refinement
-#p([
+#p[
   In the backlog refinement new tasks were created in the backlog and the time for completion was estimated.
-])
+]
 
 ==== Sprint Planning
-#p([
+#p[
   Before each sprint start, the sprint was filled with tasks from the backlog so that the estimated time of work was 2 weeks and a sprint goal was defined.
-])
+]
 
 ==== Sprint Review
-#p([
+#p[
   At the end of each sprint, the outcome of the Sprint was inspected and future adaptations were determinated. The Sprint review took place in the weekly meeting with the supervisior.
-])
+]
 
 
 ==== Daily Scrum Meeting
-#p([
+#p[
   Since the project team only consists of one person, no daily Scrum meetings were held.
-])
+]
 
 ==== Weekly Meeting with Supervisior
-#p([
+#p[
   Every week a meeting with the project supervisor took place.
-])
+]
 
 #pagebreak()
 
 === Time Tracking
 ==== Time Expenditure
-#p([
+#p[
   This thesis is worth 8 ects credits, each credit is valued with 30 hours of work. This results in a total workload of 240 hours. Distributed over the 14 weeks of the semester a working time of approximately 17 hours or 2 days is targeted.
-])
+]
 ==== Tracking
-#p([
+#p[
   To ensure that sufficient effort was put into this thesis, hours worked were recorded throughout the semester. In total, 216 hours and 10 minutes were dedicated to the project. This falls within a 10% range of the total 240 hours required, which is an acceptable margin.
 
   #if documentVersion == "full" [
     A detailed time tracking report exported from jira can be found in the appendix.
   ]
-])
+]
 
 #pagebreak()
 
@@ -318,7 +318,7 @@
   #v(gap)
 
   ==== Period
-  #p([#start - #end])
+  #p[#start - #end]
 
   ==== Sprint goal
   #p(goal)

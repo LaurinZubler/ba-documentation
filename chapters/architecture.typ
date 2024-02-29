@@ -2,53 +2,52 @@
 
 = Architecture
 ==== Preamble
-#p([
+#p[
 
-])
+]
 
 == Technology Evaluation
 ==== Introduction
-#p([
+#p[
 
-])
+]
 
 === Mobile App
 ==== Requirements
-#p([
+#p[
   - Multi Platform (Android / iOS)
   - Libraries: Encryption, Barcode, Notifications, NFC, Bluetooth LE
   - i18n
   - Dokumentation
-])
-
+]
 ==== Flutter
-#p([
+#p[
 
-])
+]
 
 ==== React Native
-#p([
+#p[
 
-])
+]
 
 ==== .NET Maui
-#p([
+#p[
 
-])
+]
 
 ==== Kotlin Multiplatform
-#p([
+#p[
 
-])
+]
 
 
 === Blockchain
 ==== Requirements
-#p([
+#p[
   - Smart Contracts
   - Price
   - in top 50 chains
   - programming language (doku, community)
   - events readable without 3rd party tool
 
-])
+]

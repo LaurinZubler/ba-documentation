@@ -27,7 +27,7 @@
     kind: table,
   )
 
-  #todo("nice todo")
+  #todo[nice todo]
 ]
 
 

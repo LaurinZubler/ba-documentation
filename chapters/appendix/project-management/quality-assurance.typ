@@ -1,4 +1,5 @@
 #import "/components/p.typ": *
+#import "/components/todo.typ": *
 
 == Quality Assurance
 ==== Introduction
@@ -31,6 +32,7 @@
 ]
 
 == Software
+#todo[Quality Assurance: Software]
 
 ==== Clean Code
 #p[]

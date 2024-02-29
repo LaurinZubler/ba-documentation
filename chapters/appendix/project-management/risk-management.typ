@@ -136,7 +136,7 @@
 ==== Results
 #p(
   [
-    #todo("risk result")
+    #todo[risk result]
     In the risk analysis, six distinct risks were identified. Of these, one was classified as high-risk, one as moderate-risk, and the remaining three as low-risk. Following the implementation of countermeasures, there was a notable reduction in the overall risk levels. While the probability of these risks occurring remained unchanged, the impact of their occurrence was successfully mitigated. 
   ]
 )
@@ -149,7 +149,7 @@
   ]
 )
 
-#todo("Real H4 header nice")
+#todo[Real H4 header nice]
 
 #risk(
   "Staff Shortage",
@@ -196,4 +196,4 @@
   "Depending on the failing hardware, a solution must be found spontaneously."
 )
 
-#todo("Risk: 'time estimation too optimistic'")
+#todo[Risk: 'time estimation too optimistic']

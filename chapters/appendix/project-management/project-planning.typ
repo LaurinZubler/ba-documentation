@@ -69,7 +69,7 @@
 
   #v(gap)
 
-#todo("image")
+#todo[image]
 /*
   _@timeline-start _ presents a screenshot of the _Jira_ timeline captured at the start of the project, illustrating how these phases were organized and visualized within the tool.
 
@@ -117,7 +117,7 @@
 
   #v(gap)
 
-#todo("image")
+#todo[image]
 /*
   _@timeline-end _ presents a screenshot of the _Jira_ timeline captured at the end of the project, illustrating how these phases were organized and visualized within the tool.
 
@@ -139,7 +139,7 @@
 #let milestone(short, title, due, criteria, end, refl) = [
   ==== #short: #title
   #v(gap)
-  #todo("use table")
+  #todo[use table]
   /*
   #global.row("Due date", due)
   #global.row("Acceptance Criterias", criteria)
@@ -147,7 +147,7 @@
   #global.row("Reflection", refl)
   */
 ]
-#todo("update milestones to ba")
+#todo[update milestones to ba]
 #milestone(
   "M1",
   "End of Project Setup",
@@ -349,7 +349,7 @@
   )
   #pagebreak(weak: true)
 ]
-#todo("update sprints to ba")
+#todo[update sprints to ba]
 #sprint(
   "Sprint 1",
   "18.09.2023",

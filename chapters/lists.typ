@@ -1,7 +1,7 @@
 #import "/components/todo.typ": *
 
 = List of Figures
-#todo("why bold??")
+#todo[why bold??]
 
 #outline(
   title: none,

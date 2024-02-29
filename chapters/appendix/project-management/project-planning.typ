@@ -36,7 +36,7 @@
 #pagebreak()
 
 === Phases
-==== [
+==== Epics
 #p([
   The project was initial segmented into rough phases, which were implemented using _Jira_ Epics.
   Six phases were defined to structure the project's timeline and key stages.

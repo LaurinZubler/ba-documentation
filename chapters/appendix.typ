@@ -11,6 +11,9 @@
 #pagebreak()
 #include "/chapters/appendix/project-management/risk-management.typ"
 
+#pagebreak()
+#include "/chapters/appendix/project-management/quality-assurance.typ"
+
 #show: doc => onlyFullVersion(doc)
 
 #pagebreak()

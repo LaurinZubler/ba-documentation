@@ -1,8 +1,11 @@
 #import "/components/p.typ": *
 #import "/components/todo.typ": *
-#import "/chapters/appendix/meetings/meeting.typ": meeting
+#import "/styles/layout.typ": layout
+#import "/utils/document-version.typ": *
 
-#show: doc => meeting(doc)
+#if documentVersion == "meetings" {
+  show: doc => layout(doc)
+}
 
 === Week 2
 

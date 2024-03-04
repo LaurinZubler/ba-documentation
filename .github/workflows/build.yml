@@ -12,6 +12,7 @@ jobs:
       - uses: actions/checkout@v3
       - run: mkdir out
       - run: mv index.html out/
+      - run: cp chapters/appendix/meetings/meeting*.typ ./
 
 # set build time on dashboard
       - run: echo "export const buildTime = '$(TZ="Europe/Berlin" date +"%d.%m.%Y %H:%M:%S")'" > utils/build-time.js
@@ -22,21 +23,6 @@ jobs:
         with:
           source_file: |
             main.typ
-      - run: mv main.pdf out/upsi_doc_full.pdf
-
-# build public version pdf
-      - run: echo '#let documentVersion = "public"' > utils/document-version.typ
-      - uses: lvignoli/typst-action@main
-        with:
-          source_file: main.typ
-      - run: mv main.pdf out/upsi_doc_public.pdf
-
-# build meetings minutes
-      - run: echo '#let documentVersion = "meetings"' > utils/document-version.typ
-      - run: cp chapters/appendix/meetings/meeting*.typ ./
-      - uses: lvignoli/typst-action@main
-        with:
-          source_file: |
             meeting01.typ
             meeting02.typ
             meeting03.typ
@@ -54,7 +40,15 @@ jobs:
             meeting15.typ
             meeting16.typ
             meeting17.typ
+      - run: mv main.pdf out/upsi_doc_full.pdf
       - run: mv meeting*.pdf out/
+
+# build public version pdf
+      - run: echo '#let documentVersion = "public"' > utils/document-version.typ
+      - uses: lvignoli/typst-action@main
+        with:
+          source_file: main.typ
+      - run: mv main.pdf out/upsi_doc_public.pdf
 
 # upload docs to github pages
       - uses: actions/upload-pages-artifact@v1

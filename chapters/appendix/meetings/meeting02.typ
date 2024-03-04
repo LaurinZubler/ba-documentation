@@ -1,11 +1,6 @@
 #import "/components/p.typ": *
-#import "/components/todo.typ": *
-#import "/styles/layout.typ": layout
-#import "/utils/document-version.typ": *
 
-#if documentVersion == "meetings" {
-  show: doc => layout(doc)
-}
+show heading.where(level: 4): it => {}
 
 === Week 2
 

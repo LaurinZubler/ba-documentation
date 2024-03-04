@@ -9,10 +9,14 @@ show heading.where(level: 4): it => {}
 
 ==== Meeting Content
 #p[
-  -
+  - Questions
+    - Mobile Technology Evaluation Criterias?
+      -
+    - Blockchain Evaluation Criterias?
+      -
 ]
 
 ==== Tasks till next week
 #p[
-  -
+  - 
 ]

@@ -14,9 +14,6 @@ jobs:
 # set build time on dashboard
       - run: echo "export const buildTime = '$(TZ="Europe/Berlin" date +"%d.%m.%Y %H:%M:%S")'" > utils/build-time.js
 
-# copy meetings minutes to root to use other components
-      - run: cp chapters/appendix/meetings/meeting*.typ ./
-
 # build full version pdf
       - uses: lvignoli/typst-action@main
         with:
@@ -51,6 +48,10 @@ jobs:
         with:
           source_file: main.typ
       - run: mv main.pdf out/upsi_doc_public.pdf
+
+# build meetings minutes
+      - run: echo '#let documentVersion = "meetings"' > utils/document-version.typ
+      - run: cp chapters/appendix/meetings/meeting*.typ ./
 
 # upload docs to github pages
       - uses: actions/upload-pages-artifact@v1

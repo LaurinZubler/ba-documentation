@@ -1,5 +1,9 @@
 #import "/components/p.typ": *
 #import "/components/todo.typ": *
+#import "/chapters/appendix/meetings/meeting.typ": meeting
+
+#show: doc => meeting(doc)
+
 === Week 2
 
 ==== Date

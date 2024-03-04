@@ -7,18 +7,22 @@ on:
 jobs:
   Build:
     runs-on: ubuntu-latest
-
+# init
     steps:
       - uses: actions/checkout@v3
+      - run: mkdir out
+      - run: mv index.html out/
 
 # set build time on dashboard
       - run: echo "export const buildTime = '$(TZ="Europe/Berlin" date +"%d.%m.%Y %H:%M:%S")'" > utils/build-time.js
+      - run: mv utils/build-time.js out/
 
 # build full version pdf
       - uses: lvignoli/typst-action@main
         with:
           source_file: |
             main.typ
+      - run: mv main.pdf out/upsi_doc_full.pdf
 
 # build public version pdf
       - run: echo '#let documentVersion = "public"' > utils/document-version.typ
@@ -50,13 +54,9 @@ jobs:
             meeting15.typ
             meeting16.typ
             meeting17.typ
+      - run: mv meeting*.pdf out/
 
 # upload docs to github pages
-      - run: mkdir out
-      - run: mv index.html out/
-      - run: mv utils/build-time.js out/
-      - run: mv main.pdf out/upsi_doc_full.pdf
-      - run: mv meeting*.pdf out/
       - uses: actions/upload-pages-artifact@v1
         with: { path: 'out' }
 

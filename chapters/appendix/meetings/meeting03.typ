@@ -1,6 +1,6 @@
 #import "/components/p.typ": *
 
-show heading.where(level: 4): it => {}
+#show heading.where(level: 4): it => {}
 
 === Week 3
 

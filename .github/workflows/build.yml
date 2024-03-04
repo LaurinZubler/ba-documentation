@@ -16,7 +16,7 @@ jobs:
 
 # copy meetings minutes to root to use other components
       - run: cp chapters/appendix/meetings/meeting*.typ ./
-      - run: echo -e "#import \"/styles/layout.typ\": layout \n #show: doc => layout(doc) \n" > ./meeting*.typ
+      - run: sed -i '1i#import "/styles/layout.typ": layout \n #show: doc => layout(doc) \n' ./meeting*.typ
 
 # build full version pdf
       - uses: lvignoli/typst-action@main

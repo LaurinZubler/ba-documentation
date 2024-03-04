@@ -4,5 +4,6 @@
 #let meeting(doc) = {
   if documentVersion == "meetings" {
     show: doc => layout(doc)
+    doc
   }
 }

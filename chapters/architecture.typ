@@ -49,5 +49,20 @@
   - in top 50 chains
   - programming language (doku, community)
   - events readable without 3rd party tool
+]
+
+== Interaction Exchange
+==== Introduction
+#p[
+
+]
+
+==== Barcode
+#p[
+
+]
+
+==== NFC
+#p[
 
 ]

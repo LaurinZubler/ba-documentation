@@ -1,9 +1,10 @@
 #import "/components/p.typ": *
+#import "/components/todo.typ": *
 
 = Architecture
 ==== Preamble
 #p[
-
+  #todo[eigenes kapitel technology?]
 ]
 
 == Technology Evaluation

@@ -2,7 +2,7 @@
 #import "@preview/tablex:0.0.8": tablex, hlinex
 
 #let styledTable = tablem.with(
-  render: (columns: auto, align: center + horizon, ..args) => {
+  render: (columns: auto, align: center+horizon, ..args) => {
     tablex(
       columns: columns,
       auto-lines: false,

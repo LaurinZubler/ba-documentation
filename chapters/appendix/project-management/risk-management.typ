@@ -11,36 +11,39 @@
   countermeasures,
   occureActions
 ) = [
-  #h4(name)
-  
-  ==== Description
-  #p(description)
-  
-  ==== Counter- \measures
-  #p(countermeasures)
-  
-  ==== Actions on Risk Occurrence
-  #p(occureActions)
-  
-  ==== Risk assessment
-  #p( 
-    figure(
-      block(  
-        width: 90%,
-        styledTable(
-          columns: (1fr, 1fr, 1fr, 1fr),
-          align: start,
-          [
-            | *Type*   | *Probabiliy*             | *Impact*            |  *Level*           | 
-            | -------- | ------------------------ | ------------------- | ------------------ |
-            | Inherent | #inherentRiskProbability | #inherentRiskImpact | #inherentRiskLevel |
-            | Residual | #residualRiskProbability | #residualRiskImpact | #residualRiskLevel |
-          ]
-        )
-      ),
-      caption: [Risk assessment for _ #name _]
+  ==== #name
+  #p[
+    #set strong(delta: 0)
+
+    ==== _Description_
+    #p(description)
+
+    ==== _Counter- \measures_
+    #p(countermeasures)
+
+    ==== _Actions on Risk Occurrence_
+    #p(occureActions)
+
+    ==== _Risk assessment_
+    #p(
+      figure(
+        block(
+          width: 90%,
+          styledTable(
+            columns: (1fr, 1fr, 1fr, 1fr),
+            align: start,
+            [
+              | *Type*   | *Probabiliy*             | *Impact*            |  *Level*           |
+              | -------- | ------------------------ | ------------------- | ------------------ |
+              | Inherent | #inherentRiskProbability | #inherentRiskImpact | #inherentRiskLevel |
+              | Residual | #residualRiskProbability | #residualRiskImpact | #residualRiskLevel |
+            ]
+          )
+        ),
+        caption: [Risk assessment for _ #name _]
+      )
     )
-  )
+  ]
 ]
 
 == Risk Management
@@ -130,13 +133,11 @@
 #pagebreak()
 
 === Risks
+#todo[Risk: table colored (optional)]
 ==== Introduction
 #p[
   In this section all the identified risks are further detailed.
 ]
-
-#todo[Real H4 header nice]
-#todo[table colored]
 
 #risk(
   "Staff Shortage",
@@ -193,3 +194,4 @@
 )
 
 #todo[Risk: 'time estimation too optimistic']
+

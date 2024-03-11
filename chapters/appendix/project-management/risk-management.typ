@@ -185,7 +185,7 @@
 
 #risk(
   "Time Estimation too Optimistic",
-  "",
+  "Tasks take longer than expected and the planned goal cannot be reached",
   "Possible", "Major", "High",
   "Possible", "Moderate", "Moderate",
   "",

@@ -5,7 +5,7 @@
 === Week 2
 
 ==== Date
-#p("26.02.2024")
+#p[26.02.2024]
 
 ==== Meeting Content
 #p[

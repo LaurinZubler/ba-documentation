@@ -29,7 +29,7 @@
       figure(
         block(
           width: 90%,
-          styledTable(
+          genericTable(
             columns: (1fr, 1fr, 1fr, 1fr),
             align: start,
             [
@@ -73,7 +73,7 @@
   #figure(
     block(
       width: 50%,
-      styledTable(
+      genericTable(
         columns: (auto, 1fr, auto),
         [
           | *Probability* | *Impact*      | *Value* |

@@ -1,7 +1,7 @@
 #import "@preview/tablem:0.1.0": tablem
 #import "@preview/tablex:0.0.8": tablex, hlinex
 
-#let styledTable = tablem.with(
+#let genericTable = tablem.with(
   render: (columns: auto, align: center+horizon, ..args) => {
     tablex(
       columns: columns,

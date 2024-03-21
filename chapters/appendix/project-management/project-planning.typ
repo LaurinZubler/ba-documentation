@@ -56,7 +56,7 @@
   #figure(
     block(
       width: 95%,
-      styledTable(
+      genericTable(
         columns: (auto, auto, 1fr),
         align: start,
         [

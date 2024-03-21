@@ -12,7 +12,7 @@
   #figure(
     block(
       width: 90%,
-      styledTable(
+      genericTable(
         columns: (auto, 1fr, 1fr, 1fr),
         [
           | *\#* | *Column 2*  | *Column 3* | *Column 4* |

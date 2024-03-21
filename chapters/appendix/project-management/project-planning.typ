@@ -270,10 +270,10 @@
     ==== _Period_
     #p[#start - #end]
 
-    ==== _Sprint goal_
+    ==== _Sprint Goal_
     #p(goal)
 
-    ==== _Sprint increments_
+    ==== _Planned \ Sprint Increments_
     #p(increments)
 
     ==== _Retrospective_
@@ -326,9 +326,9 @@
     - Milestone: End of Analysis
   ],
   [
-    To get faster in conatact with a test organisation, the decision was made to set the focus on writing a concept, to be able to present the idea of the project.
+    To get in contact with a test organisation as soon as possible, the decision was made to set the focus on writing a concept, to be able to present the idea of the project.
     Therefore there was less time for the literature review and the milestone _End of Analysis_ was not reached.
-    In the overall success of the project this is not seen as a problem, as some tasks are now done in advance and the literature review postponed.
+    The overall success of the project is not seen in danger, as some tasks are now done in advance and the literature review is just postponed.
   ],
   "/images/project-management/2_start.png",
   "/images/project-management/2_end.png"
@@ -338,9 +338,14 @@
   "Sprint 3",
   "19.03.2024",
   "01.04.2023",
-  "",
+  "Concept & Literature Review",
   [
-
+    - Analysis: Literature Review
+    - Development: Architecture diagram
+    - Development: Design Prototype
+    - Concept: Presentation to introduce the project idea
+    - Evaluation: Contact test organisation
+    - Milestone: End of Analysis
   ],
   [
 

@@ -326,11 +326,12 @@
     - Milestone: End of Analysis
   ],
   [
-
+    To get faster in conatact with a test organisation, the decision was made to set the focus on writing a concept, to be able to present the idea of the project.
+    Therefore there was less time for the literature review and the milestone _End of Analysis_ was not reached.
+    In the overall success of the project this is not seen as a problem, as some tasks are now done in advance and the literature review postponed.
   ],
   "/images/project-management/2_start.png",
-  //"/images/project-management/2_end.png"
-  ""
+  "/images/project-management/2_end.png"
 )
 
 #sprint(
@@ -344,9 +345,8 @@
   [
 
   ],
-  //"/images/project-management/3_start.png",
+  "/images/project-management/3_start.png",
   //"/images/project-management/3_end.png"
-  "",
   ""
 )
 

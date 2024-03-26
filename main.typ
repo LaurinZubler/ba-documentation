@@ -24,6 +24,7 @@
   "chapters/introduction.typ",
   "chapters/literature-review.typ",
   "chapters/architecture.typ",
+  "chapters/technology.typ",
   "chapters/implementation.typ",
   "chapters/evaluation.typ",
   "chapters/conclusion.typ",

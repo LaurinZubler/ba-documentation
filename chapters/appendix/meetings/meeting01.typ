@@ -1,2 +1,2 @@
 === Week 1
-Due to time-finding difficulties no meeting was held in the first week.
+Due to time constraints, no meeting took place in the first week.
